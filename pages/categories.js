@@ -54,7 +54,7 @@ export default function CategoriesPage({mainCategories,categoriesProducts,wished
   return (
     <>
       <Header />
-      <Center>
+      <Center>~
         {mainCategories.map(cat => (
           <CategoryWrapper>
             <CategoryTitle>
