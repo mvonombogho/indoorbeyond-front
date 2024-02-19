@@ -1,6 +1,6 @@
-import mongoose, {model, models, Schema} from "mongoose";
+const { models, model, Schema } = require("mongoose")
 
-const AddressSchema = new Schema({
+const AddressSchema = new Schema ({
   userEmail: {type:String, unique:true, required:true},
   name: String,
   email: String,
@@ -8,6 +8,6 @@ const AddressSchema = new Schema({
   postalCode: String,
   streetAddress: String,
   country: String,
-});
+})
 
-export const Address = models?.Address || model('Address', AddressSchema);
+ export const Address = models?.Address || model('Address', AddressSchema)
